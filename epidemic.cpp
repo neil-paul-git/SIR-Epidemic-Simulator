@@ -5,6 +5,7 @@ DESCRIPTION: This program simulates an epidemic using the SIR model with basic t
 */
 
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
 
@@ -16,8 +17,6 @@ const int MAX_POP = 1000000;
 //Declare global variables which are used to manage the epidemic simulations
 int popSize, cycles, initSusceptible, initInfected, initRecovered;
 double infectionRate, recoveryRate;
-
-#include <iomanip>
 
 //Recursive function which simulates the epidemic cycle by cycle
 void simulateEpidemic(int susceptible, int infected, int recovered, int currentCycle) {
